@@ -6,6 +6,29 @@ export const SignupForm = () => {
   const [refreshPage, setRefreshPage] = useState(false);
   // Pass the useFormik() hook initial form values and a submit function that will
   // be called when the form is submitted
+  // const formik = useFormik({
+  //   initialValues: {
+  //     name: "",
+  //     email:"",
+  //     age:"",
+  //   },
+  //   validationSchema: formSchema,
+  // onSubmit : (values) => {
+  //   fetch("customers", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type" : "application/json",
+  //     },
+  //     body: JSON.stringify(values, null, 2),
+  //   }).then(
+  //     (res) => {
+  //       if (res.status == 200){
+  //         setRefreshPage(!refreshPage)
+  //       }
+  //     }
+  //   )
+  // },
+  // });
 
   useEffect(() => {
     console.log("FETCH! ");
